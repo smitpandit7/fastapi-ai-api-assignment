@@ -2,6 +2,12 @@
 
 A REST API application built using FastAPI that provides AI-powered text summarization, language translation, and email generation capabilities.
 
+## Demo Video
+
+A complete walkthrough of the project, architecture, API testing, validation, logging, and documentation can be viewed here:
+
+https://drive.google.com/file/d/17hDMZW7fO9t46KCK_odc2ZnDpsQa1OeL/view?usp=sharing
+
 ## Features
 
 * Text Summarization using Groq LLM
