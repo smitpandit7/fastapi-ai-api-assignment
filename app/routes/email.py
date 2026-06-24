@@ -4,7 +4,9 @@ from app.models.schemas import EmailRequest
 from app.services.email_generator import generate_email
 from app.core.logger import logger
 
-router = APIRouter()
+router = APIRouter(
+    tags=["Email Generation"]
+)
 
 
 @router.post("/generate-email")

@@ -4,7 +4,9 @@ from app.models.schemas import TranslationRequest
 from app.services.translator import translate_text
 from app.core.logger import logger
 
-router = APIRouter()
+router = APIRouter(
+    tags=["Translation"]
+)
 
 
 @router.post("/translate")

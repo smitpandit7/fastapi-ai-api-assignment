@@ -4,7 +4,7 @@ from app.models.schemas import SummaryRequest
 from app.services.summarizer import summarize_text
 from app.core.logger import logger
 
-router = APIRouter()
+router = APIRouter(tags=["Summarization"])
 
 
 @router.post("/summarize")

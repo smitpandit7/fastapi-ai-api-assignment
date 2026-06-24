@@ -6,10 +6,17 @@ from app.routes.email import router as email_router
 
 app = FastAPI(
     title="AI Utility API",
-    description="FastAPI application for Summarization, Translation and Email Generation",
-    version="1.0.0"
-)
+    description="""
+    REST API built using FastAPI that provides:
 
+    • Text Summarization
+    • Language Translation
+    • AI Email Generation
+
+    Developed as part of the IR Infotech AI/ML Intern Assignment.
+    """,
+    version="1.0.0",
+)
 app.include_router(summarize_router)
 app.include_router(translate_router)
 app.include_router(email_router)
