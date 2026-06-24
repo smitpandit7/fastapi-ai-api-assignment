@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from enum import Enum
 from typing import Literal
 
 
@@ -20,7 +21,13 @@ class TranslationRequest(BaseModel):
     ]
 
 
+class ToneEnum(str, Enum):
+    professional = "professional"
+    friendly = "friendly"
+    formal = "formal"
+
+
 class EmailRequest(BaseModel):
     purpose: str = Field(..., min_length=5)
     recipient: str = Field(..., min_length=2)
-    tone: str = Field(..., min_length=2)
+    tone: ToneEnum

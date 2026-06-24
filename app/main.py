@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 from app.routes.summarize import router as summarize_router
 from app.routes.translate import router as translate_router
+from app.routes.email import router as email_router
 
 app = FastAPI(
     title="AI Utility API",
@@ -11,6 +12,7 @@ app = FastAPI(
 
 app.include_router(summarize_router)
 app.include_router(translate_router)
+app.include_router(email_router)
 
 @app.get("/")
 def root():
