@@ -75,7 +75,7 @@ fastapi-ai-api-assignment/
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/smitpandit7/fastapi-ai-api-assignment.git
 cd fastapi-ai-api-assignment
 ```
 
